@@ -1383,3 +1383,15 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.mr-5 {
+  margin-right: 10px;
+}
+
+.jus-space {
+  justify-content:space-between;
+}
+
+.flex {
+  display: flex;
+}
