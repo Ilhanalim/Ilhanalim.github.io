@@ -21,17 +21,19 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- ================== FAVICON ================ -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Responsive Portfolio Website</title>
+    <title>Hi, I'm Ilhan</title>
 </head>
 
 <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header">
+    <header class="header" id="header" data-aos="fade-down">
         <nav class="nav container">
             <a href="#" class="nav__logo">Ilhan</a>
 
@@ -81,7 +83,7 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home section" id="home">
+        <section class="home section" data-aos="fade-down" id="home">
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
@@ -138,15 +140,15 @@
         </section>
 
         <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
+        <section class="about section" data-aos="fade-down" id="about">
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My Introduction</span>
 
             <div class="about__container container grid">
                 <!-- <img src="assets/img/about2blr2.png" alt="" class="about__img"> -->
-                <img src="assets/img/about2.jpg" alt="" class="about__img">
+                <img src="assets/img/about2.jpg" alt="" class="about__img" data-aos="fade-right">
 
-                <div class="about__data">
+                <div class="about__data" data-aos="fade-left">
                     <p class="about__description">
                         My name is Ilhan Alim Asfandima. I am an active student majoring in informatics at a national
                         university in
@@ -157,22 +159,22 @@
                         dream to become
                         an expert programmer.
                     </p>
-                    <!-- <div class="about__info">
+                    <div class="about__info">
                         <div>
-                            <span class="about__info-title">08+</span>
+                            <span class="about__info-title">02+</span>
                             <span class="about__info-name">Years <br> experience</span>
                         </div>
 
                         <div>
-                            <span class="about__info-title">20+</span>
+                            <span class="about__info-title">10+</span>
                             <span class="about__info-name">Completed <br> project</span>
                         </div>
 
                         <div>
-                            <span class="about__info-title">05+</span>
+                            <span class="about__info-title">01+</span>
                             <span class="about__info-name">Companies <br> worked</span>
                         </div>
-                    </div> -->
+                    </div>
 
                     <div class="about__buttons">
                         <a href="assets/pdf/Ilhan-portfolio.pdf" class="button button-flex"> Download Portfolio
@@ -184,7 +186,7 @@
         </section>
 
         <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
+        <section class="skills section" id="skills" data-aos="fade-down">
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">My technical level</span>
 
@@ -276,7 +278,7 @@
         </section>
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
+        <section class="qualification section" data-aos="fade-down">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
 
@@ -394,7 +396,7 @@
 
 
         <!--==================== PORTFOLIO ====================-->
-        <section class="portofolio section" id="portofolio">
+        <section class="portofolio section" id="portofolio" data-aos="fade-down">
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent work</span>
 
@@ -534,12 +536,12 @@
 
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contact" data-aos="fade-down">
             <h2 class="section__title">Contact Me</h2>
             <span class="section__subtitle">Get in touch</span>
 
             <div class="contact__container container grid">
-                <div>
+                <div data-aos="fade-right">
                     <div class="contact__information">
                         <i class="uil uil-phone contact__icon"></i>
 
@@ -568,7 +570,8 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid" name="submit-to-google-sheet" autocomplete="off">
+                <form action="" class="contact__form grid" name="submit-to-google-sheet" autocomplete="off"
+                    data-aos="fade-left">
 
                     <div class="contact__content">
                         <label for="" class="contact__label">Name</label>
@@ -666,6 +669,14 @@
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/sheets.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
